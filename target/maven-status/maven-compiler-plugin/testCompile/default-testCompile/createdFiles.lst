@@ -1,0 +1,10 @@
+stefDef\shoppingStep.class
+pajeObject\checkOutStepOne.class
+pajeObject\inventoryPage.class
+stefDef\Hook.class
+pajeObject\checkOutComplete.class
+base\setup.class
+pajeObject\cartPage.class
+pajeObject\loginPage.class
+pajeObject\checkOutStepTwo.class
+TestRunner.class

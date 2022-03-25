@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>NMCodeExamCucumberBDD</td>
+                          <td>1</td>
+                        <td>24 Mar 2022, 22:48</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stefDef.Hook.endTest()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.Hook.startTest()</td>
+                <td>1</td>
+                <td class="duration" data-value="4275375400">4s 275ms</td>
+                <td class="duration" data-value="4275375400">4s 275ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iAddAnotherItem()</td>
+                <td>1</td>
+                <td class="duration" data-value="58021600">058ms</td>
+                <td class="duration" data-value="58021600">058ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iAddedTwoItemsToTheShoppingCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="101694400">101ms</td>
+                <td class="duration" data-value="101694400">101ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iAmAtSaucedemoHomepage()</td>
+                <td>1</td>
+                <td class="duration" data-value="67953600">067ms</td>
+                <td class="duration" data-value="67953600">067ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iAssertThatIAmPurchasingTheCorrectItems()</td>
+                <td>1</td>
+                <td class="duration" data-value="331887900">331ms</td>
+                <td class="duration" data-value="331887900">331ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iAssertThatTheItemsThatIAddedAreInTheCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="48819200">048ms</td>
+                <td class="duration" data-value="48819200">048ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iAssertTheTotalPrice()</td>
+                <td>1</td>
+                <td class="duration" data-value="21212700">021ms</td>
+                <td class="duration" data-value="21212700">021ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iClickOnFinishButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="48180200">048ms</td>
+                <td class="duration" data-value="48180200">048ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iClickOnLoginButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="96172200">096ms</td>
+                <td class="duration" data-value="96172200">096ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iDoCheckout()</td>
+                <td>1</td>
+                <td class="duration" data-value="90569200">090ms</td>
+                <td class="duration" data-value="90569200">090ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iEnterValidPassword()</td>
+                <td>1</td>
+                <td class="duration" data-value="82111500">082ms</td>
+                <td class="duration" data-value="82111500">082ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iEnterValidUsername()</td>
+                <td>1</td>
+                <td class="duration" data-value="115927100">115ms</td>
+                <td class="duration" data-value="115927100">115ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iFinishCheckout()</td>
+                <td>1</td>
+                <td class="duration" data-value="27612200">027ms</td>
+                <td class="duration" data-value="27612200">027ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iRemoveAnItemAndThenContinueShopping()</td>
+                <td>1</td>
+                <td class="duration" data-value="86727500">086ms</td>
+                <td class="duration" data-value="86727500">086ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iShouldBeAbleToLoginSuccessfully()</td>
+                <td>1</td>
+                <td class="duration" data-value="6832100">006ms</td>
+                <td class="duration" data-value="6832100">006ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iSortTheItemsLowestPriceSort()</td>
+                <td>1</td>
+                <td class="duration" data-value="54624400">054ms</td>
+                <td class="duration" data-value="54624400">054ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stefDef.shoppingStep.iVisitTheShoppingCart()</td>
+                <td>1</td>
+                <td class="duration" data-value="62074200">062ms</td>
+                <td class="duration" data-value="62074200">062ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>18</td>
+              <td>18</td>
+              <td class="duration">5s 575ms</td>
+              <td class="duration">309ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
